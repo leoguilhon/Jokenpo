@@ -78,4 +78,19 @@ public class JokenpoTest {
 		int jogar = jogo.jogar(1,4);
 		assertTrue(jogar == -1);
 	}
+	@Test
+	public void Zero() {
+		int jogar = jogo.jogar(0,0);
+		assertTrue(jogar == -1);
+	}
+	@Test
+	public void ZeroPapel() {
+		int jogar = jogo.jogar(0,1);
+		assertTrue(jogar == -1);
+	}
+	@Test
+	public void PapelZero() {
+		int jogar = jogo.jogar(1,0);
+		assertTrue(jogar == -1);
+	}
 }
